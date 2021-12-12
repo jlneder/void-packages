@@ -1,0 +1,22 @@
+# Template file for 'tuigreet'
+pkgname=tuigreet
+version=0.7.1
+revision=1
+build_style=cargo
+hostmakedepends="scdoc"
+#depends="greetd"
+short_desc="Graphical console greeter for greetd"
+maintainer="rslabbert <rslabbert@fastmail.com>"
+license="GPL-3.0-or-later"
+homepage="https://github.com/apognu/tuigreet"
+distfiles="https://github.com/apognu/tuigreet/archive/refs/tags/${version}.tar.gz"
+checksum=507b331ff3066e705a66c2e6036548f5a47eb45f12e262d5bcacf5c5b24df56c
+tags="greeter"
+
+post_build() {
+	scdoc < contrib/man/tuigreet-1.scd > tuigreet.1
+}
+
+post_install() {
+	vman tuigreet.1
+}
