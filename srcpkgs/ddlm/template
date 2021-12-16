@@ -1,0 +1,15 @@
+# Template file for 'ddlm'
+pkgname=ddlm
+version=0.1.0
+_hash=1115a50a1ca42ba25296de29165637c5a10b0417
+wrksrc="${pkgname}-${_hash}"
+revision=1
+build_style=cargo
+#depends="greetd"
+short_desc="Graphical fbdev greeter for greetd"
+maintainer="Jose Luis Neder <jlneder@gmail.com>"
+license="GPL-3.0-or-later"
+homepage="ttps://github.com/deathowl/ddlm"
+distfiles="https://github.com/deathowl/ddlm/archive/$_hash.zip"
+checksum=2258e5f788ef783d7894b0f8a085aba65a404e71576a296cc4834e2ad67ce723
+tags="greeter"
