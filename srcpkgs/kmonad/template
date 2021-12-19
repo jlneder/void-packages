@@ -1,15 +1,17 @@
 # Template file for 'kmonad'
 pkgname=kmonad
-version=0.4.1
-revision=2
+version=0.4.2
+_hash=f33b513bd153dc4beaebdd3b4dd6ed83a523ad69
+wrksrc="${pkgname}-${_hash}"
+revision=1
 build_style=haskell-stack
 stackage=lts-17.5
 short_desc="Keyboard remapping utility providing qmk-like functionality"
 maintainer="slotThe <soliditsallgood@mailbox.org>"
 license="MIT"
-homepage="https://github.com/david-janssen/kmonad"
-distfiles="${homepage}/archive/${version}.tar.gz"
-checksum=cb66f0c6d4c304c7e3c48cefd0c50ea00b156ffc361e278e1fc5c6070317d927
+homepage="https://github.com/kmonad/kmonad"
+distfiles="${homepage}/archive/${_hash}.zip"
+checksum=5f4da63bcea20517ea93d96dc0092fefa685de608b753693e29fdf74a4936024
 nopie_files="/usr/bin/kmonad"
 nocross=yes
 
